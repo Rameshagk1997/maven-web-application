@@ -11,7 +11,7 @@ node{
     stage('Build'){
     sh "${mavenHome}/bin/mvn clean package"    
     }
-    
+    /*
     stage('Executsonarquberepo'){
     sh "${mavenHome}/bin/mvn sonar:sonar"
     }
@@ -25,5 +25,5 @@ node{
             sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.108.191.78:/opt/apache-tomcat-9.0.58/webapps"
         }
     }
-    
+    */
 }//node close
